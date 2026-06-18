@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,31 +18,32 @@
 <body>
     <style type="text/css">
         .title {
-            font-size: 5em;
+            font-size: 3.5rem;
         }
 
         .bl-grey {
-            border-left: 2px solid grey;
+            border-left: 3px solid #e6e6e6;
+            padding-left: 1rem;
         }
 
         .bb-black {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid #212121;
+            margin-bottom: 20px;
         }
 
         .list-clean-decoration {
             list-style-type: none;
-        }
-
-        .list-clean-decoration li {
-            margin-bottom: 10px;
+            padding-left: 0;
         }
 
         #resume-body {
             background-color: #F6F6F6;
+            padding: 2rem 1rem;
         }
 
         #badges {
             list-style-type: none;
+            padding-left: 0;
         }
 
         #better-at {
@@ -59,27 +60,27 @@
             text-decoration: none;
         }
     </style>
-    <div class="container mt-3 mb-3" id="resume-body">
-        <div class="row pt-3 mb-3">
-            <div class="col-md-3 text-center">
-                <img src="img/profile.jpeg" alt="My photo" class="img-thumbnail">
+
+    <div class="container" id="resume-body">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center mb-3">
+                <img src="img/profile.jpeg" alt="Foto" class="img-fluid img-thumbnail">
             </div>
             <div class="col-md-6 text-center">
-                <h1 class="title">JOSÉ<br> VITOR</h1><br>
-                <h2 style="text-transform: uppercase;">Especialista em Cibersegurança / Desenvolvedor Web</h2>
+                <h1 class="title">José Vitor</h1><br>
+                <h2>Especialista em Cibersegurança<br> Desenvolvedor Web</h2>
             </div>
-            <div class="col-md-3 d-flex align-items-center">
-                <div>
-                    <ul id="badges">
-                        <li><span class="badge bg-secondary">Email</span> zedutra93@gmail.com</li>
-                        <li><span class="badge bg-secondary">Website</span> zedutra.github.io</li>
-                        <li><span class="badge bg-secondary">Endereço</span> Limeira SP</li>
-                    </ul>
-                </div>
+            <div class="col-md-3 mb-3">
+                <ul id="badges">
+                    <li><span class="badge bg-secondary">Email</span> zedutra93@gmail.com</li>
+                    <li><span class="badge bg-secondary">Website</span> zedutra.github.io</li>
+                    <li><span class="badge bg-secondary">Cidade</span> Limeira, SP</li>
+                </ul>
             </div>
         </div>
+
         <div class="row mt-3 mb-3">
-            <div class="d-flex justify-content-around" id="better-at">
+            <div class="col-12 d-flex justify-content-center" id="better-at">
                 <div class="p-2">Me conheça melhor em</div>
                 <div class="p-2"><a href="https://linkedin.com/in/zedutra"><ion-icon name="logo-linkedin"
                             class="align-middle"></ion-icon>/zedutra</a></div>
@@ -87,126 +88,78 @@
                             class="align-middle"></ion-icon>/zedutra</a></div>
             </div>
         </div>
-        <div class="row mt-3 mb-3">
-            <div class="col-md-8">
-                <div class="container">
-                    <h2 class="bb-black p-2"><ion-icon name="school-outline" class="align-middle"></ion-icon> Formação
-                    </h2>
-                    <p class="bl-grey p-2">
-                        2018 - 2020<br />
-                        <b>Técnico em Informática para Internet</b><br />
-                        Instituto Federal
-                    </p>
-                    <p class="bl-grey p-2">
-                        2022 - Presente<br />
-                        <b>Bacharelado em Sistemas de Informação</b><br />
-                        Unicamp
-                    </p>
 
-                </div>
-                <div class="container">
-                    <h2 class="bb-black p-2"><ion-icon name="ribbon-outline"></ion-icon> Certificações</h2>
-                    <p class="bl-grey p-2">
-                        2024<br />
-                        <b>Especialização RED TEAM</b><br />
-                        Escola Superior de Redes
-                    </p>
-                    <p class="bl-grey p-2">
-                        2024<br />
-                        <b>Formação em Cibersegurança</b><br />
-                        Escola Superior de Redes
-                    </p>
-                </div>
-                <div class="container">
-                    <h2 class="bb-black p-2"><ion-icon name="bar-chart-outline" class="align-middle"></ion-icon>
-                        Experiência</h2>
-                    <p>
-                        2021 - Presente<br />
-                        <b>Desenvolvedor Web</b><br />
-                        Nortii Sistemas
-                    <div class="bl-grey p-1">
-                        <ul>
-                            <li>Desenvolvimento de aplicativos e componentes web usando PHP e Laravel.</li>
-                            <li>Implementação de boas práticas de segurança em aplicações web (validação de entrada,
-                                tratamento de sessões, proteção contra XSS/CSRF).</li>
-                            <li>Criação de código server-side e client-side para websites e projetos PWA usando PHP,
-                                HTML, CSS e JavaScript.</li>
-                            <li>Realização de avaliações de segurança e testes de penetração em aplicações internas,
-                                incluindo reconhecimento, exploração controlada e elaboração de relatórios.</li>
-                            <li>Configuração de WAF (Cloudflare).</li>
+        <div class="row">
+            <div class="col-md-8">
+                <section class="mb-4">
+                    <h2 class="bb-black p-2">Resumo</h2>
+                    <p class="p-2 bl-grey">Desenvolvedor Web em transição para Cibersegurança, com experiência prática no desenvolvimento, manutenção e publicação de sistemas web em produção. Atuo com PHP/Laravel, Inertia.js, Vue.js, MySQL, Linux, cPanel e deploys versionados com Git, unindo visão de desenvolvimento, infraestrutura e operação de aplicações. Atualmente aprofundo meus estudos em Segurança da Informação, com foco em Segurança Web, Application Security, OWASP Top 10, análise de aplicações, hardening e fundamentos de segurança ofensiva e defensiva.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="bb-black p-2">Experiência</h2>
+                    <div class="p-2 bl-grey">
+                        <h5 class="mb-1">Nortii Sistemas — Desenvolvedor Web</h5>
+                        <small>Limeira, São Paulo — 2022 - Presente</small>
+                        <ul class="mt-2">
+                            <li>Desenvolvo e mantenho sistemas web em produção com PHP, Laravel, Inertia.js e Vue.js, contribuindo para a implementação de funcionalidades, correção de bugs e evolução contínua de aplicações corporativas.</li>
+                            <li>Estruturo e mantenho bancos de dados MySQL, apoiando a modelagem de tabelas, relacionamentos e consultas utilizadas por aplicações web em ambiente de produção.</li>
+                            <li>Administro ambientes Linux e hospedagens via cPanel, realizando configurações de aplicação, manutenção de serviços, acompanhamento de estabilidade e suporte operacional a sistemas publicados.</li>
+                            <li>Executo deploys e atualizações de versões com Git, organizando a publicação de melhorias, correções e mudanças de código de forma controlada em sistemas web.</li>
+                            <li>Aplico boas práticas de desenvolvimento e manutenção em aplicações web, considerando organização de código, controle de versão, segurança básica de aplicações e continuidade dos serviços.</li>
                         </ul>
                     </div>
-                    </p>
-                </div>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="bb-black p-2">Educação</h2>
+                    <div class="p-2 bl-grey">
+                        <p><strong>Unicamp</strong> — Bacharelado em Sistemas de Informação (2022 - Presente)</p>
+                        <p><strong>Instituto Federal de Minas Gerais</strong> — Técnico em Informática para Internet (2018 - 2020)</p>
+                    </div>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="bb-black p-2">Certificações</h2>
+                    <div class="p-2 bl-grey">
+                        <p><strong>Escola Superior de Redes</strong> — Especialização RED TEAM (2024)</p>
+                        <p><strong>Escola Superior de Redes</strong> — Formação em Cibersegurança (2024)</p>
+                    </div>
+                </section>
             </div>
-            <div class="col-md-4">
-                <div class="container">
-                    <h2 class="bb-black p-2"><ion-icon name="person-circle-outline" class="align-middle"></ion-icon>
-                        Sobre</h2>
-                    <p><b>Nome:</b> José Vitor Dutra Antônio</p>
-                    <p><b>Aniversário:</b> 11/02/2003</p>
-                    <p><b>Nacionalidade:</b> Brasil</p>
-                    <p><b>Cidade:</b> Limeira, São Paulo</p>
-                    <p><b>Experiência:</b> 4 anos</p>
-                </div>
-                <div class="container">
-                    <p>Desenvolvedor Web com experiência em segurança de aplicações e transição para Cibersegurança
-                        ofensiva. Atuação em análise de vulnerabilidades, pentest web, hardening de aplicações
-                        Laravel/PHP e mitigação de ataques utilizando WAF (Cloudflare). Conhecimentos em OWASP Top 10,
-                        MITRE ATT&CK, OSINT e automação com Python. Buscando oportunidades em Application Security,
-                        Pentest e SOC.</p>
-                </div>
-                <div class="container">
-                    <h2 class="bb-black p-2"><ion-icon name="cog-outline" class="align-middle"></ion-icon> Habilidades
-                    </h2>
-                    <ul>
-                        <li>Linux (Bash, administração)</li>
 
-                        <li>Redes e análise de tráfego (TCP/IP, Wireshark)</li>
+            <aside class="col-md-4">
+                <section class="mb-3">
+                    <h2 class="bb-black p-2">Sobre</h2>
+                    <div class="p-2">
+                        <p><strong>Nome:</strong> José Vitor Dutra Antônio</p>
+                        <p><strong>Aniversário:</strong> 11/02/2003</p>
+                        <p><strong>Nacionalidade:</strong> Brasil</p>
+                        <p><strong>Cidade:</strong> Limeira, São Paulo</p>
+                        <p><strong>Experiência:</strong> 4 anos</p>
+                    </div>
+                </section>
 
-                        <li>Pentest Web e OWASP Top 10</li>
+                <section class="mb-3">
+                    <h2 class="bb-black p-2">Perfil</h2>
+                    <div class="p-2">
+                        <p>Desenvolvedor Web em transição para Cibersegurança ofensiva. Atuação em análise de vulnerabilidades, pentest web, hardening de aplicações Laravel/PHP e mitigação de ataques utilizando WAF (Cloudflare). Conhecimentos em OWASP Top 10, MITRE ATT&CK, OSINT e automação com Python.</p>
+                    </div>
+                </section>
 
-                        <li>Burp Suite</li>
-
-                        <li>Python para automação e análise de segurança</li>
-
-                        <li>OSINT / NSINT</li>
-
-                        <li>MITRE ATT&CK</li>
-
-                        <li>WAF e mitigação de ataques (Cloudflare)</li>
-
-                        <li>PHP / Laravel</li>
-
-                        <li>MySQL</li>
-
-                        <li>REST APIs e segurança de aplicações web</li>
-
-                        <li>Git / GitHub</li>
-
-                        <li>Docker</li>
-
-                        <li>ISO/IEC 27001</li>
-
-                        <li>Metodologias ágeis (Scrum)</li>
-                    </ul>
-                </div>
-                <div class="container">
-                    <h2 class="bb-black p-2">
-                        <ion-icon name="globe-outline" class="align-middle"></ion-icon> Línguas
-                    </h2>
-
-                    <ul class="list-clean-decoration">
-                        <li>
-                            <b>Português:</b> Nativo
-                        </li>
-
-                        <li>
-                            <b>Inglês:</b> Técnico/intermediário (leitura de documentação, artigos e ferramentas)
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <section class="mb-3">
+                    <h2 class="bb-black p-2">Habilidades</h2>
+                    <div class="p-2">
+                        <ul>
+                            <li><strong>Segurança da Informação:</strong> Segurança Web, Application Security, OWASP Top 10, Pentest Web, Burp Suite, MITRE ATT&CK, OSINT/NSINT, WAF (Cloudflare), hardening básico.</li>
+                            <li><strong>Backend:</strong> PHP, Laravel, Inertia.js, Vue.js, MySQL, REST APIs.</li>
+                            <li><strong>Infraestrutura:</strong> Linux, Bash, cPanel, Docker, deploys com Git.</li>
+                            <li><strong>Ferramentas:</strong> Git/GitHub, Docker, Burp Suite, Wireshark, Python.</li>
+                            <li><strong>Idiomas:</strong> Português (Nativo), Inglês técnico/intermediário.</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
         </div>
     </div>
 
